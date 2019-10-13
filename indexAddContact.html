@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="contactPanel">
+    <header class="contact">
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" required>
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+        </div>
+        <nav class="addContact">
+            <h1 class="title">Add new contact</h1>
+        </nav>
+    </header>
+    <form class="formAdd" action="#">
+        <div class="avatar"></div>
+        <h6 class="sign">Click for upload photo</h6>
+        <div class="inputs">
+            <div class="nameFields">
+                <p>Name</p>
+                <label for="user-name-id">
+                    <input id="user-name-id" type="text" name="firstName" placeholder="Type something" required>
+                </label>
+            </div>
+
+            <div class="nameFields">
+                <p>Surname</p>
+                <label for="user-surname-id">
+                    <input id="user-surname-id" type="text" name="secondName" placeholder="Your surname here" required>
+                </label>
+            </div>
+            <div class="nameFields">
+                <p>Phone</p>
+                <label for="user-tel-id">
+                    <input id="user-tel-id" type="tel" name="tel"
+                           pattern="\+38\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}">
+                </label>
+            </div>
+            <div class="nameFields">
+                <p>Email</p>
+                <label for="user-mail-id">
+                    <input id="user-mail-id" type="email" name="mail">
+                </label>
+            </div>
+            <div class="nameFields">
+                <p>Birthday</p>
+                <label for="user-birth-id">
+                    <input id="user-birth-id" type="text" name="birthday">
+                </label>
+            </div>
+            <div class="nameFields">
+                <p>Instagram</p>
+                <label for="user-insta-id">
+                    <input id="user-insta-id" type="text" name="instagram">
+                </label>
+            </div>
+            <div class="nameFields">
+                <p>Facebook</p>
+                <label for="user-facebook-id">
+                    <input id="user-facebook-id" type="text" name="facebook">
+                </label>
+            </div>
+            <div class="nameFields">
+                <p>Information</p>
+                <textarea name="info"></textarea>
+            </div>
+            <div class="saveInfo">
+                <button class="saveInfo">Save</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
